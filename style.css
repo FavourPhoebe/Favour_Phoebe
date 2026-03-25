@@ -12,13 +12,14 @@ html{
 body{
   background-color: rgb(36, 35, 35);
   color: white;
+  overflow-x: hidden;
 }
 
 /* Navbar */
 .navbar{
     display: flex;
     align-items: center;
-    justify-content: right;
+    justify-content: space-between;
     color: #fff;
     opacity: 0.8;
     width: 100%;
@@ -69,8 +70,14 @@ span{
   color: orangered;
 }
 
-.hero{
-  background-image: url(./img/code\ image\ 2.jpg);
+.hero {
+  background: url(./img/code\ image\ 2.jpg) no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+}
+
+h1{
+  line-height: 1.2;
 }
 .hero .content{
     display: flex;
@@ -79,11 +86,11 @@ span{
     justify-content: center;
     text-align: center;
     height: 100%;
-    padding: 230px 20px 0 20px;
+    padding: 150px 20px 50px;
     
 }
 .hero .content h1{
-    font-size: 150px;
+    font-size: 6vw;
     font-weight: 100;
 }
 .hero .content p{
@@ -116,7 +123,7 @@ span{
 
 section{
   background-color: rgb(42, 41, 41);
-  padding: 40px 100px;
+  padding: 40px 5%;
 }
 
 section h1{
@@ -209,7 +216,7 @@ section h1 span{
     object-fit: center;
 }
 .flex-columns .column-1{
-    margin: 0 100px;
+    margin: 0;
 }
 
 .col{
@@ -433,9 +440,6 @@ main span, h2{
 }
 
 /* Left Side */
-.left {
-  width: 35%;
-}
 
 .left h2 {
   font-family: 'Playfair Display', serif;
@@ -472,9 +476,6 @@ main span, h2{
 }
 
 /* Right Side */
-.right {
-  width: 60%;
-}
 
 .row {
   display: flex;
@@ -876,6 +877,7 @@ button:hover {
   /* Stats */
   .container {
     flex-direction: column;
+    flex-wrap: wrap;
     gap: 40px;
   }
 
@@ -907,6 +909,7 @@ button:hover {
   }
 
   .left, .right {
+    flex: 1;
     width: 100%;
   }
 
@@ -975,6 +978,7 @@ button:hover {
   }
 
   .left, .right {
+    flex: 1;
     width: 100%;
   }
 
@@ -1001,4 +1005,5 @@ button:hover {
   }
 
 }
+
 
