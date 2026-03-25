@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <div id="navbar" class="navbar top">
+        <nav>
+            <ul>
+            <li><a href="index.html" class="current">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+<!-- Portfolio Section -->
+<section class="portfolio">
+    <h1>My <span>Portfolio</span></h1>
+
+  <div class="portfolio-grid">
+
+    <!-- Project 1 -->
+    <div class="portfolio-item">
+      <img src="img/Ecommerce.png" alt="project">
+      <br><br>
+      <img src="img/Ecommerce2.png" alt="project">
+      <br><br>
+      <img src="img/Ecommerce3.png" alt="project">
+      <div class="overlay">
+        <h3>E-Commerce Website</h3>
+        <p>Web Development</p>
+        <a href="#"><i class="fa fa-link"></i></a>
+      </div>
+    </div>
+<!-- 
+     Project 2 
+    <div class="portfolio-item">
+      <img src="./img/project2.jpg" alt="project">
+      <div class="overlay">
+        <h3>Advertisement Website</h3>
+        <p>UI/UX Design</p>
+        <a href="#"><i class="fa fa-link"></i></a>
+      </div>
+    </div>
+
+   Project 3
+    <div class="portfolio-item">
+      <img src="./img/project3.jpg" alt="project">
+      <div class="overlay">
+        <h3>Landing Page</h3>
+        <p>Frontend</p>
+        <a href="#"><i class="fa fa-link"></i></a>
+      </div>
+    </div>
+
+     Project 4 
+    <div class="portfolio-item">
+      <img src="./img/project4.jpg" alt="project">
+      <div class="overlay">
+        <h3>Dashboard UI</h3>
+        <p>Design</p>
+        <a href="#"><i class="fa fa-link"></i></a>
+      </div>
+    </div> -->
+
+  </div>
+</section>
+
+</body>
+</html>
+
+    <button id="backToTop"><i class="fa fa-arrow-up"></i></button>
+
+<script>
+const btn = document.getElementById("backToTop");
+
+// Show button when scrolling down
+window.onscroll = function () {
+  if (document.documentElement.scrollTop > 200) {
+    btn.style.display = "block";
+  } else {
+    btn.style.display = "none";
+  }
+};
+
+// Scroll to top
+btn.onclick = function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+};
+</script>    
+</body>
+</html>

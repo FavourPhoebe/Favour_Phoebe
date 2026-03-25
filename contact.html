@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Contact Me</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <div id="navbar" class="navbar top">
+        <nav>
+            <ul>
+            <li><a href="index.html" class="current">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <section class="contact">
+
+    <h1 class="section-title">
+        Get <span>In Touch</span>
+    </h1>
+
+    <!-- Contact Info Boxes -->
+    <div class="contact-info">
+
+        <div class="info-box">
+        <div class="icon"><i class="fa fa-phone"></i></div>
+        <p>+234 802 970 0311</p>
+        </div>
+
+        <div class="info-box">
+        <div class="icon"><i class="fa fa-envelope"></i></div>
+        <p>favourphoebe68@gmail.com</p>
+        </div>
+
+        <div class="info-box">
+        <div class="icon"><i class="fa fa-location-dot"></i></div>
+        <p>Ogun State, Nigeria</p>
+        </div>
+
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Main Content -->
+    <div class="contact-content">
+
+        <!-- Left Side -->
+        <div class="left">
+        <h2>Send Me An Email</h2>
+        <p>
+            Feel free to get in touch with me.  
+            I am always open to discussing new  
+            projects or creative ideas.
+        </p>
+
+        <h3>Follow Me</h3>
+
+        <div class="socials">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        </div>
+
+        <!-- Right Side -->
+        <div class="right">
+        <form>
+            <div class="row">
+            <input type="text" placeholder="YOUR NAME">
+            <input type="text" placeholder="SUBJECT">
+            <input type="email" placeholder="YOUR EMAIL">
+            </div>
+
+            <textarea placeholder="YOUR MESSAGE"></textarea>
+
+            <button type="submit">SEND MESSAGE</button>
+        </form>
+        </div>
+
+    </div>
+
+    </section>
+
+    <button id="backToTop"><i class="fa fa-arrow-up"></i></button>
+
+<script>
+const btn = document.getElementById("backToTop");
+
+// Show button when scrolling down
+window.onscroll = function () {
+  if (document.documentElement.scrollTop > 200) {
+    btn.style.display = "block";
+  } else {
+    btn.style.display = "none";
+  }
+};
+
+// Scroll to top
+btn.onclick = function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+};
+</script>
+</body>
+</html>

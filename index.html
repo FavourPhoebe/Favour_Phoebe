@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  
+</head>
+<body>
+  <header class="hero">
+    <div id="navbar" class="navbar top">
+      <nav>
+        <ul>
+          <li><a href="index.html" class="current">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="content">
+      <h1>Hi! I'm <span>Favour.</span></h1>
+      <p>I'm a Freelance UI/UX Designer and Developer based in Ogun State, Nigeria.</p>
+      <a href="about.html" class="btn">More About Me</a>
+    </div>
+  </header>
+    
+
+  <button id="backToTop"><i class="fa fa-arrow-up"></i></button>
+
+  <script>
+const btn = document.getElementById("backToTop");
+
+// Show button when scrolling down
+window.onscroll = function () {
+  if (document.documentElement.scrollTop > 200) {
+    btn.style.display = "block";
+  } else {
+    btn.style.display = "none";
+  }
+};
+
+// Scroll to top
+btn.onclick = function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+};
+</script>
+
+</body>
+</html>
