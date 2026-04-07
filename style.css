@@ -843,6 +843,7 @@ button:hover {
 
   .flex-items {
     flex-direction: column;
+    width: 100%;
   }
 
   .exp {
@@ -924,10 +925,10 @@ button:hover {
   /* Resume */
   .flex-items {
     flex-wrap: wrap;
+    width: 100%;
   }
 
   .exp {
-    width: 45%;
     margin-bottom: 20px;
   }
 
