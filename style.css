@@ -167,10 +167,6 @@ section h1{
   font-size: 30px;
 }
 
-.edu{
-  margin-bottom: 30px;
-}
-
 
 section h1 span{
   color: orangered;
@@ -182,14 +178,10 @@ section h1 span{
 .flex-columns.flex-reverse .row{
     flex-direction: row-reverse;
 }
-.flex-columns{
-  height: 80%;
-}
 .flex-columns .row{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 100%;
 }
 .flex-columns .column{
     display: flex;
@@ -204,10 +196,9 @@ section h1 span{
 }
 
 .flex-columns .column .column-2{
-  line-height: 30px;
-  font-size: 20px;
+  line-height: 1.6;
+  font-size: 25px;
   padding: 50px 0;
-  margin-bottom: 20px;
 }
 
 .flex-columns img{
@@ -215,23 +206,7 @@ section h1 span{
     height: 100%;
     object-fit: center;
 }
-.flex-columns .column-1{
-    margin: 0;
-}
 
-.col{
-  display: flex;
-  flex-direction: right;
-}
-
-.col-1, .col-2{
-  line-height: 30px;
-  font-size: 20px;
-}
-
-.col-2{
-  margin-left: 100px;
-}
 
 /* Flex Items */
 .flex-items{
@@ -1006,4 +981,68 @@ button:hover {
 
 }
 
+/* Overlay */
 
+/* Overlay Background */
+#successOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s ease;
+  z-index: 2000;
+}
+
+/* Show overlay */
+#successOverlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Popup Box */
+.success-box {
+  background: #2e2e2e;
+  padding: 40px;
+  text-align: center;
+  border-radius: 10px;
+  transform: scale(0.8);
+  transition: 0.3s ease;
+  max-width: 400px;
+  width: 90%;
+}
+
+/* Animate box */
+#successOverlay.active .success-box {
+  transform: scale(1);
+}
+
+/* Text */
+.success-box h2 {
+  margin-bottom: 10px;
+}
+
+.success-box p {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+/* Button */
+.success-box button {
+  background: orangered;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.success-box button:hover {
+  background: #e64a19;
+}
